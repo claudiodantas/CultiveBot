@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CultiveBot</title>
+  <link rel="shortcut icon" href="./images/icone.png">
+  <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+
+  <script type="text/javascript" src="/scripts/jquery/dist/jquery.js"></script>
+  <script src="/scripts/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src= "/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/scripts/angular/angular.min.js"></script>
+  <script src="/scripts/angular/angular.js"></script>
+  <script src="/scripts/angular-route/angular-route.min.js"></script>
+
+  <script src="./app/app.module.js"></script>
+  <script src="./app/controllers/inicioCtrl.js"></script>
+  <script src="./app/controllers/cameraCtrl.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CultiveBot</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#!/"><span class="glyphicon glyphicon-tree-deciduous"></span> Início <span class="sr-only"></span></a></li>
+          <li><a href="#!/minhasplantas"><span class="glyphicon glyphicon-grain"></span> Minhas plantas</a></li>
+          <li><a href="#!/camera">
+            <span class="glyphicon glyphicon-facetime-video"></span> Câmera</a></li>
+          <!-- <li><a href="#!/controleManual"><span class="glyphicon glyphicon-screenshot"></span> Controle Manual</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="badge">0</span>  Notificações</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-user"></span> Usuário<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#!/dadospessoais/conta">Dados pessoais</a></li>
+              <li><a href="#">Preferências</a></li>
+              <li><a href="#"></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Sair</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div ng-view></div>
+
+</body>
+</html>
